@@ -1,0 +1,22 @@
+{
+  "name": "bintang-toba-pro",
+  "version": "2.0.0",
+  "description": "Professional modular userscript for GeoGuessr",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.js",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "userscript",
+    "geoguessr",
+    "tampermonkey"
+  ],
+  "author": "BT-Team",
+  "license": "Custom",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "esbuild": "^0.19.0"
+  }
+}

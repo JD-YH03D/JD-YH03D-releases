@@ -1,0 +1,27 @@
+/**
+ * BintangToba - Main Styles
+ * CSS animations and core UI styling rules.
+ */
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes btpFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Base styles for the Phone Frame container */
+#geohelper-phone-frame {
+    transition: width 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
+
+.geohelper-app-btn:hover {
+    transform: scale(1.05);
+}
+
+.geohelper-app-btn:active {
+    transform: scale(0.95);
+}
