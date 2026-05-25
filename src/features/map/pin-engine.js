@@ -123,3 +123,35 @@ export function pinGuessToGameMap(lat, lng) {
     const synEvent = buildSyntheticMapEvent(lat, lng);
     return dispatchToClickListeners(gMapInst, synEvent);
 }
+
+/**
+ * Toggle the internal marker visibility on the game map.
+ */
+export function toggleMarker() {
+    const coords = extractCoordinates();
+    if (!coords || !Validators.isValidCoord(coords.lat, coords.lng)) {
+        Logger.warn('Cannot toggle marker: invalid coordinates');
+        return false;
+    }
+
+    // In modular version, this might trigger a specific UI overlay
+    // For now, we use pinGuessToGameMap as a placeholder or direct interaction
+    return pinGuessToGameMap(coords.lat, coords.lng);
+}
+
+/**
+ * Place a guess on the game map, optionally with a randomized offset.
+ */
+export function placeGuessOnMap(isSafe = false) {
+    let coords = extractCoordinates();
+    if (!coords || !Validators.isValidCoord(coords.lat, coords.lng)) {
+        Logger.warn('Cannot place guess: invalid coordinates');
+        return false;
+    }
+
+    if (isSafe || state.features?.safeMode) {
+        coords = jitterCoordinates(coords.lat, coords.lng);
+    }
+
+    return pinGuessToGameMap(coords.lat, coords.lng);
+}

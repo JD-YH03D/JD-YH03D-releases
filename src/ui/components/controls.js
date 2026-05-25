@@ -53,3 +53,12 @@ export function togglePanel() {
     state.infoVisible = !state.infoVisible;
     // updateInfoDisplay() implementation depends on final layout
 }
+
+/**
+ * Switch UI to home/map view quickly.
+ */
+export function openHomeQuick() {
+    if (!Throttle.canRun('open_home', 300)) return;
+    state.infoVisible = true;
+    state.phoneView = 'map';
+}
