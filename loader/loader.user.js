@@ -14,9 +14,9 @@
     'use strict';
 
     const CONFIG = {
-        PRIMARY_URL: 'https://raw.githubusercontent.com/username/repo/main/dist/core.user.js',
-        FALLBACK_URL: 'https://cdn.jsdelivr.net/gh/username/repo@main/dist/core.user.js',
-        VERSION_URL: 'https://raw.githubusercontent.com/username/repo/main/dist/version.json',
+        PRIMARY_URL: 'https://raw.githubusercontent.com/JD-YH03D/JD-YH03D-releases/main/dist/core.user.js',
+        FALLBACK_URL: 'https://cdn.jsdelivr.net/gh/JD-YH03D/JD-YH03D-releases@main/dist/core.user.js',
+        VERSION_URL: 'https://raw.githubusercontent.com/JD-YH03D/JD-YH03D-releases/main/dist/version.json',
         TIMEOUT: 8000
     };
 

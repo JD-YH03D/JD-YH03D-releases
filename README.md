@@ -44,7 +44,7 @@ We recommend **Google Chrome**, **Microsoft Edge**, or **Mozilla Firefox** for t
 3.  *(Chrome/Edge Only)*: Go to `Extensions -> Manage Extensions` and enable **Developer Mode** to allow script injection.
 
 ### Step 3: Install the BintangToba Loader
-1.  Navigate to the [loader.user.js](https://github.com/username/repo/raw/main/loader/loader.user.js) file in this repository.
+1.  Navigate to the [loader.user.js](https://github.com/JD-YH03D/JD-YH03D-releases/raw/main/loader/loader.user.js) file in this repository.
 2.  Tampermonkey will automatically detect the script and open an "Install" tab.
 3.  Click the **Install** button.
 
@@ -62,8 +62,8 @@ Ensure you have [Node.js](https://nodejs.org/) (v18+) installed.
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/repo.git
-cd repo
+git clone https://github.com/JD-YH03D/JD-YH03D-releases.git
+cd JD-YH03D-releases
 
 # Install dependencies
 npm install
