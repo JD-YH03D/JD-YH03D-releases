@@ -1,0 +1,9 @@
+{
+  "updatedAt": "2026-05-25T14:05:14.970Z",
+  "artifacts": {
+    "core.user.js": {
+      "hash": "54b2b02c402b004658b72fd3dda3ce884305bf45ad9e2c6fa8024a67c3ab7258",
+      "algorithm": "sha256"
+    }
+  }
+}
